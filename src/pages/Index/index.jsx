@@ -60,7 +60,7 @@ export default function Index() {
                     I have &nbsp;
                 </span>
                 <span className='bold text'>
-                    2
+                    +2
                 </span>
                 <span className='normal text'>
                     &nbsp;years of experience developing video games in Unity, whether they are 3D or 2D, and although my dream is to create new stories, adventures and challenges where I can express myself, without a doubt, the world of web development has captivated me 💘 and every day I try to learn new things. Trying even harder!
