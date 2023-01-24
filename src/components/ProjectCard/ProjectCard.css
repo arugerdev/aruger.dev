@@ -1,0 +1,99 @@
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 200px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    border: 3px solid var(--text);
+    padding: 30px;
+}
+
+.projectCardLogo{
+    display: flex;
+    object-fit: contain;
+    width: 100%;
+    height: 100px;
+    padding: 50px 0;
+    margin: 20px 0;
+
+    border: 3px dotted var(--text);
+}
+
+.projectCardButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+    padding: 50px 0 0 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: 3px solid var(--text);
+    padding: 0px 7px;
+    margin: 5px 0px;
+    font-size: calc(5px + 1vmin);
+    font-weight: 900;
+    min-width: 60px;
+    width: auto;
+    height: 30px;
+    transition: all .2s ease-in-out;
+}
+
+.githubButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: 3px solid black;
+    padding: 0px 7px;
+    margin: 5px 0px;
+    font-size: calc(5px + 1vmin);
+    font-weight: 900;
+    width: 100px;
+    height: 30px;
+    word-break: keep-all;
+
+    transition: all .2s ease-in-out;
+}
+
+.projectCardTitle {
+    display: flex;
+    color: #646cff;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.projectCardID {
+    display: flex;
+    color: gray;
+    font-size: calc(5px + 1vmin);
+    padding: 0;
+    margin: 0;
+}
+
+.githubButton>svg {
+    color: black;
+    transition: all .2s ease-in-out;
+    margin: 5px 5px;
+}
+
+.pageButton:hover {
+    background: var(--text);
+}
+
+.githubButton:hover {
+    background: black;
+}
+
+.githubButton:hover>svg {
+    color: #ffffff;
+}

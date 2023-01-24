@@ -1,0 +1,48 @@
+.socialNetworks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--text);
+    width: 100%;
+    bottom: 0;
+    margin-top: 100px;
+}
+
+.socialNetworksList {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+}
+
+.socialNetworkButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin: 5px 5px;
+    padding: 3px 3px;
+    border: 3px solid var(--text);
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+}
+
+.socialNetworkButton:hover {
+    border: 3px solid #747bff;
+}
+
+.socialNetworkButton>img {
+    width: 24px;
+    height: 24px;
+}
+
+body.dark .socialNetworkButton>img {
+    filter: invert(1);
+}
+
+body.light .socialNetworkButton>img {
+    filter: invert(0);
+}

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+.indexPage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: calc(100% - 40px);
+    padding: 5rem 20px;
+    overflow: hidden;
+    text-align: start;
+    padding-bottom: 1rem;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.colored {
+    color: #646cff;
+}
+
+.link
+{
+    text-decoration: underline;
+}
+
+.text {
+    font-size: calc(10px + 1vmin);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.title {
+    font-size: calc(20px + 2vmin);
+    font-weight: 1000;
+    font-family: 'Comfortaa', cursive;
+    padding: 10px 0px;
+}
+
+
+.text_container {
+    display: flex;
+    gap: 8px;
+}
+
+.text_container .sec-text {
+    position: relative;
+    color: #646cff;
+    font-weight: 1000;
+}
+
+.text_container .sec-text::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--background);
+    border-left: 5px solid #646cff;
+    animation: animate 4s steps(12) infinite;
+    overflow: hidden;
+}
+
+.main_text_content {
+    border-top: 1px solid var(--text);
+    padding: 5% 0%;
+    margin: 5% 0%;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 500px) {
+
+    .text_container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+}
+
+@keyframes animate {
+
+    40%,
+    60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+
+}
