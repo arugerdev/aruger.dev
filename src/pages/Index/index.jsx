@@ -53,7 +53,7 @@ export default function Index() {
                 <br />
                 <span className="normal text">My name is </span>
                 <span className="bold colored text">Álvaro Rüger </span>
-                <span className="normal text">and I'm a experimented game  developer 🕹️ , but actually I'm learning web development 🌐, especially I work in the frontend, I usually work with React ⚛️ , Vite 🔽 , Chakra-UI and mores! </span>
+                <span className="normal text">and I'm a experimented game  developer 🕹️ , but actually I'm learning web development 🌐, especially I work in the frontend, I usually work with React ⚛️ , Vite ⚡ , Chakra-UI and mores! </span>
                 <br />
                 <br />
                 <span className='normal text'>
