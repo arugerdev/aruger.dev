@@ -13,18 +13,13 @@ function App() {
   const handleUpdateIcon = () => {
     const DarklinkIconHTML = `<link rel="icon" type="image/svg+xml" href=${DarkLogo} />`
     const LightlinkIconHTML = `<link rel="icon" type="image/svg+xml" href=${LightLogo} />`
-
-    console.log('useEffect')
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       document.head.innerHTML += DarklinkIconHTML
     }
     if (window.matchMedia("(prefers-color-scheme: light)").matches) {
       document.head.innerHTML += LightlinkIconHTML
     }
-
-
   }
-
 
   useEffect(() => handleUpdateIcon())
 

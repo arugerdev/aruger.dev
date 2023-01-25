@@ -24,7 +24,7 @@ export default function SocialNetworks() {
                 {data.map((sn, i) => {
                     return (<li key={i}>
                         <a target='_blank' href={sn.url} className="socialNetworkButton">
-                            <img src={sn.icon}></img>
+                            <img src={sn.icon} alt={sn.icon}></img>
                         </a>
                     </li>
                     )

@@ -35,7 +35,6 @@ export default function Index() {
     }, [update])
 
 
-
     return (
         <div className="indexPage">
             <div>
