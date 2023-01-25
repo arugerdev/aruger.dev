@@ -136,7 +136,7 @@ export default function About() {
             <br />
             <div>
                 <span className="normal text">Thank you, brother, for always being there </span>
-                <a className="normal link" href="https://github.com/RubenRuCh">@RubenRuCh</a>
+                <a target='_blank' rel='noreferrer' className="normal link" href="https://github.com/RubenRuCh">@RubenRuCh</a>
             </div>
         </div>
 
