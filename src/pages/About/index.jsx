@@ -73,7 +73,7 @@ export default function About() {
             },
             {
                 title: 'First computer!',
-                description: "This is hard to say... I stole my older brother's computer. Not in really, he just bought a new better computer and he gift me his old computer."
+                description: "This is hard to say... I stole my older brother's computer. Not in really, he just bought a new better computer and he ''gift'' me his old computer."
             }]
         }),
         timeCardData({
