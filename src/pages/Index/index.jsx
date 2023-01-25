@@ -74,7 +74,7 @@ export default function Index() {
                 <span className='normal text'>
                     &nbsp;Currently I only have a couple of projects to learn and practice, which you can see on my&nbsp;
                 </span>
-                <a rel='noreferrer' target='_blank' href="https://github.com/AlvaroRuCh" className='bold link'>GitHub</a>
+                <a rel='noreferrer' target='_blank' href="https://github.com/arugerdev" className='bold link'>GitHub</a>
 
                 <span className='normal text'>
                     . You can also follow me on&nbsp;

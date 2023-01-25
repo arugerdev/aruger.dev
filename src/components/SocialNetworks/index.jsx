@@ -6,7 +6,7 @@ import './SocialNetworks.css'
 export default function SocialNetworks() {
     const data = [{
         icon: github,
-        url: 'https://github.com/AlvaroRuCh'
+        url: 'https://github.com/arugerdev'
     }, {
         icon: instagram,
         url: 'https://www.instagram.com/aruger_dev/'
