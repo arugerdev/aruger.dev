@@ -1,0 +1,59 @@
+.aboutPage{
+    padding: 5%;
+}
+
+.timeDate {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.timePointInfo {
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: start;
+    border-left: 2px solid var(--text);
+    word-wrap: break-word;
+    max-width: 35vw;
+}
+
+.timeList {
+    list-style: none;
+
+}
+
+.leftDecoration {
+    width: 1px;
+    height: 100%;
+    background: var(--text);
+}
+
+.timePointPosition::after {
+    content: '';
+    display: flex;
+    position: relative;
+    left: -29px;
+    top: -20px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #646cff;
+
+}
+
+.date{
+    color: #646cff;
+}
+
+.littleText{
+    color: grey;
+}

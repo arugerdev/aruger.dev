@@ -53,6 +53,10 @@
     font-weight: 1000;
 }
 
+.cursive {
+    font-style: italic;
+}
+
 .text_container .sec-text::before {
     content: "";
     position: absolute;
