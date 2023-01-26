@@ -79,7 +79,7 @@ export default function About() {
         timeCardData({
             date: '2005', points: [{
                 title: 'I was born!',
-                description: '🐣 Me! (with 0 years ago of course)'
+                description: '🐣 Me! (with 0 years old of course)'
             }]
         })
     ])
