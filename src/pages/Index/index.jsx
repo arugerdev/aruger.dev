@@ -52,7 +52,7 @@ export default function Index() {
                 <br />
                 <span className="normal text">My name is </span>
                 <span className="bold colored text">Álvaro Rüger </span>
-                <span className="normal text">and I'm a game  developer 🕹️ , but actually I'm learning web development 🌐, especially I work in the frontend, I usually work with React ⚛️ , Vite ⚡ , Chakra-UI and mores! </span>
+                <span className="normal text">and I'm a game  developer 🕹️ , but actually I'm learning web development 🌐, especially I work in the frontend, I usually work with React ⚛️ , Vite ⚡ and mores! For terminal I use and recommend</span> <a className='bold link' target='_blank' rel='noreferrer' href="https://hyper.is/">  Hyper ⚡ </a> <span className="normal text">this give a better desings, more constumization, and for me, better results.</span>
                 <br />
                 <br />
                 <span className='normal text'>
