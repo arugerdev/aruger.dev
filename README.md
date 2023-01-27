@@ -1,6 +1,6 @@
 # My personal WebSite
 
-#### This is the code of my personal 🌐 WebSite [📎Aruger.dev](https://arugerdev.vercel.app/)
+#### This is the code of my personal 🌐 WebSite [📎Aruger.dev](https://aruger.dev/)
 
 In my web you can see all of my projects, about me and my social networks 🌍
 
