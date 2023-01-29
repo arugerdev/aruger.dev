@@ -16,6 +16,39 @@
   min-height: 100vh;
 }
 
+.normal {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.colored {
+  color: #646cff;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.text {
+  font-size: calc(10px + 1vmin);
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.title {
+  font-size: calc(20px + 2vmin);
+  font-weight: 1000;
+  font-family: 'Comfortaa', cursive;
+  padding: 10px 0px;
+}
+
+.cursive {
+  font-style: italic;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;

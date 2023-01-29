@@ -12,36 +12,6 @@
     padding-bottom: 1rem;
 }
 
-.normal {
-    font-weight: 400;
-}
-
-.bold {
-    font-weight: 800;
-}
-
-.colored {
-    color: #646cff;
-}
-
-.link
-{
-    text-decoration: underline;
-}
-
-.text {
-    font-size: calc(10px + 1vmin);
-    font-family: 'Space Grotesk', sans-serif;
-}
-
-.title {
-    font-size: calc(20px + 2vmin);
-    font-weight: 1000;
-    font-family: 'Comfortaa', cursive;
-    padding: 10px 0px;
-}
-
-
 .text_container {
     display: flex;
     gap: 8px;
@@ -51,10 +21,6 @@
     position: relative;
     color: #646cff;
     font-weight: 1000;
-}
-
-.cursive {
-    font-style: italic;
 }
 
 .text_container .sec-text::before {
