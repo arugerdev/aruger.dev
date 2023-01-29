@@ -8,15 +8,14 @@ import About from './pages/About'
 import DarkLogo from './assets/images/logo-dark.png'
 import LightLogo from './assets/images/logo-light.png'
 import { useEffect } from 'react'
-function App() {
-
+function App () {
   const handleUpdateIcon = () => {
     const DarklinkIconHTML = `<link rel="icon" type="image/svg+xml" href=${DarkLogo} />`
     const LightlinkIconHTML = `<link rel="icon" type="image/svg+xml" href=${LightLogo} />`
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       document.head.innerHTML += DarklinkIconHTML
     }
-    if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+    if (window.matchMedia('(prefers-color-scheme: light)').matches) {
       document.head.innerHTML += LightlinkIconHTML
     }
   }
@@ -24,17 +23,16 @@ function App() {
   useEffect(() => handleUpdateIcon())
 
   return (
-    <div className="App">
-      <Header></Header>
+    <div className='App'>
+      <Header />
       <Switch>
-        <Route path='/' component={Index}></Route>
-        <Route path='/projects' component={Projects}></Route>
-        <Route path='/about' component={About}></Route>
+        <Route path='/' component={Index} />
+        <Route path='/projects' component={Projects} />
+        <Route path='/about' component={About} />
       </Switch>
-      <SocialNetworks></SocialNetworks>
+      <SocialNetworks />
     </div>
   )
 }
 
 export default App
-
