@@ -6,6 +6,13 @@ import './Projects.css'
 export default function Projects () {
   const [projects] = useState([
     {
+      name: 'Image Saver',
+      id: 'image-saver',
+      pageLink: 'https://image-saver.vercel.app/',
+      githubLink: 'https://github.com/arugerdev/image-saver',
+      imageURL: 'https://image-saver.vercel.app/assets/logo-946d255e.svg'
+    },
+    {
       name: 'Aruger.dev',
       id: 'aruger.dev',
       pageLink: '/',
