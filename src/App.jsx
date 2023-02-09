@@ -1,6 +1,6 @@
 import './App.css'
 import { Header } from './components/Header'
-import { Switch, Route } from 'wouter'
+import { Route } from 'wouter'
 import SocialNetworks from './components/SocialNetworks'
 import Index from './pages/Index'
 import Projects from './pages/Projects'
@@ -25,11 +25,9 @@ function App () {
   return (
     <div className='App'>
       <Header />
-      <Switch>
-        <Route path='/' component={Index} />
-        <Route path='/projects' component={Projects} />
-        <Route path='/about' component={About} />
-      </Switch>
+      <Route path='/' component={Index} />
+      <Route path='/projects' component={Projects} />
+      <Route path='/about' component={About} />
       <SocialNetworks />
     </div>
   )
