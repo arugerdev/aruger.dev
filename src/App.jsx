@@ -8,6 +8,7 @@ import About from './pages/About'
 import DarkLogo from './assets/images/logo-dark.png'
 import LightLogo from './assets/images/logo-light.png'
 import { useEffect } from 'react'
+import Blog from './pages/Blog'
 function App () {
   const handleUpdateIcon = () => {
     const DarklinkIconHTML = `<link rel="icon" type="image/svg+xml" href=${DarkLogo} />`
@@ -28,6 +29,7 @@ function App () {
       <Route path='/' component={Index} />
       <Route path='/projects' component={Projects} />
       <Route path='/about' component={About} />
+      <Route path='/blog' component={Blog} />
       <SocialNetworks />
     </div>
   )

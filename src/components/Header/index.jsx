@@ -3,10 +3,24 @@ import './Header.css'
 import { ChangeTheme } from '../ChangeTheme'
 import clickAudio from '../../assets/sounds/se029.wav'
 import mainClickAudio from '../../assets/sounds/se031.wav'
+import DefaultNav from '../DefaultNav'
+import HamburgerNav from '../HamburgerNav'
+import { useEffect, useState } from 'react'
 export const Header = () => {
   const [route] = useLocation()
   const buttonClickAudio = new Audio(clickAudio)
   const mainButtonClickAudio = new Audio(mainClickAudio)
+
+  const [screenWidth, updateScreenWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    const handleResize = () => {
+      updateScreenWidth(window.innerWidth)
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [window.innerWidth])
 
   return (
     <header className='header'>
@@ -17,19 +31,10 @@ export const Header = () => {
           </a>
         </Link>
       </section>
-      <section className='headerNavegationSection'>
-        <ul className='headerButtonsNav'>
-          <li className='headerButtonsNavItem'>
-            <Link onClick={() => { buttonClickAudio.play() }} to='/' className={'headerButton' + (route === '/' ? ' active' : '')}>Home</Link>
-          </li>
-          <li className='headerButtonsNavItem'>
-            <Link onClick={() => { buttonClickAudio.play() }} to='/projects' className={'headerButton' + (route === '/projects' ? ' active' : '')}>Projects</Link>
-          </li>
-          <li className='headerButtonsNavItem'>
-            <Link onClick={() => { buttonClickAudio.play() }} to='/about' className={'headerButton' + (route === '/about' ? ' active' : '')}>About</Link>
-          </li>
-        </ul>
-      </section>
+      {screenWidth > 500 &&
+        <DefaultNav route={route} buttonClickAudio={buttonClickAudio} />}
+      {screenWidth < 500 &&
+        <HamburgerNav route={route} buttonClickAudio={buttonClickAudio} />}
       <section className='headerChangeThemeSection'>
         <ChangeTheme />
       </section>

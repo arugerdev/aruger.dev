@@ -43,6 +43,68 @@
     align-items: center;
 }
 
+.headerHNavegationSection {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hamburgerButton {
+    background: none;
+    place-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 40px;
+    width: 40px;
+    border: none;
+}
+
+.hamburgerButton:focus {
+    outline: none;
+}
+
+.hamburgerButton.open>.hamburgerNavIconPiece:nth-child(3) {
+    transform: translateX(-15px);
+    opacity: 0;
+}
+
+.hamburgerButton.open>.hamburgerNavIconPiece:nth-child(4) {
+    transform: translateX(15px);
+    opacity: 0;
+}
+
+.hamburgerButton.open>.hamburgerNavIconPiece:nth-child(1) {
+    transform: translate(5px, -1px);
+    rotate: 45deg;
+}
+
+.hamburgerButton.open>.hamburgerNavIconPiece:nth-child(2) {
+    transform: translate(-3.8px, 0.25px);
+    rotate: -45deg;
+}
+
+.hamburgerButton.open>.hamburgerNavIconPiece:nth-child(5) {
+    transform: translate(4.32px, 1.75px);
+    rotate: -45deg;
+}
+
+.hamburgerButton.open>.hamburgerNavIconPiece:nth-child(6) {
+    transform: translate(-3px, 0.5px);
+    rotate: 45deg;
+}
+
+.hamburgerNavIconPiece {
+    display: flex;
+    width: 16px;
+    height: 3px;
+    background: var(--text);
+
+    transition: all .4s cubic-bezier(0, 0, 0, 1);
+}
+
 .headerButtonsNav {
     display: flex;
     width: 100%;
@@ -56,6 +118,49 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hDashboard {
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    top: 60px;
+    background: var(--text);
+    border-radius: 12px;
+    transition: all .4s cubic-bezier(0, 0, 0, 1);
+}
+
+.hMenu {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    border: 2px solid var(--background);
+    border-radius: 12px;
+}
+
+.hNavMenu {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    justify-content: center;
+    margin: 0;
+    padding: 16px;
+}
+
+.hNavMenu>li>a {
+    color: var(--background);
+}
+
+.hDashboard.close {
+    display: none;
+    opacity: 0;
+}
+
+.hDashboard.open {
+    display: flex;
+    opacity: 1;
 }
 
 .headerChangeThemeSection {
