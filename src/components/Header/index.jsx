@@ -33,7 +33,7 @@ export const Header = () => {
       </section>
       {screenWidth > 500 &&
         <DefaultNav route={route} buttonClickAudio={buttonClickAudio} />}
-      {screenWidth < 500 &&
+      {screenWidth <= 500 &&
         <HamburgerNav route={route} buttonClickAudio={buttonClickAudio} />}
       <section className='headerChangeThemeSection'>
         <ChangeTheme />
