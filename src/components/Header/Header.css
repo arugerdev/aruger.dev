@@ -1,10 +1,13 @@
 .header {
     display: flex;
+    position: fixed;
     flex-direction: row;
     width: 100%;
     min-height: 5rem;
     align-items: center;
     justify-content: flex-start;
+    backdrop-filter: blur(5px);
+    z-index: 2;
     border-bottom: 1px solid var(--text);
 }
 

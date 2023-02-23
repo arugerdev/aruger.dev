@@ -7,6 +7,12 @@
   justify-content: center;
 }
 
+.marginTop {
+  display: flex;
+  height: 5rem;
+  width: 100%;
+}
+
 .App {
   display: flex;
   max-width: 1280px;

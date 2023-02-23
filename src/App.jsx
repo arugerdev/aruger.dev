@@ -26,6 +26,7 @@ function App () {
   return (
     <div className='App'>
       <Header />
+      <div className='marginTop' />
       <Route path='/' component={Index} />
       <Route path='/projects' component={Projects} />
       <Route path='/about' component={About} />
