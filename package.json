@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "fs": "^0.0.1-security",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "wouter": "^2.9.2"
