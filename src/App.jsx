@@ -1,6 +1,6 @@
 import './App.css'
 import { Header } from './components/Header'
-import { Route } from 'wouter'
+import { Route, useLocation } from 'wouter'
 import SocialNetworks from './components/SocialNetworks'
 import Index from './pages/Index'
 import Projects from './pages/Projects'
@@ -9,7 +9,11 @@ import DarkLogo from './assets/images/logo-dark.png'
 import LightLogo from './assets/images/logo-light.png'
 import { useEffect } from 'react'
 import Blog from './pages/Blog'
-function App () {
+import Blogs from './components/Blogs'
+import getAllBlogsCards from './getAllBlogsCards'
+function App() {
+  const [location] = useLocation()
+  const blogId = parseInt((location.includes('/blog/') ? location.replace('/blog/', '') : '0'))
   const handleUpdateIcon = () => {
     const DarklinkIconHTML = `<link rel="icon" type="image/svg+xml" href=${DarkLogo} />`
     const LightlinkIconHTML = `<link rel="icon" type="image/svg+xml" href=${LightLogo} />`
@@ -31,6 +35,7 @@ function App () {
       <Route path='/projects' component={Projects} />
       <Route path='/about' component={About} />
       <Route path='/blog' component={Blog} />
+      <Route path='/blog/:id'> <Blogs id={blogId} data={getAllBlogsCards()[blogId].data} /></Route>
       <SocialNetworks />
     </div>
   )
