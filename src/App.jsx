@@ -1,4 +1,8 @@
 import './App.css'
+import './pages/About/About.css'
+import './pages/Blog/Blog.css'
+import './pages/Index/IndexPage.css'
+import './pages/Projects/Projects.css'
 import { Header } from './components/Header'
 import { Route, useLocation } from 'wouter'
 import SocialNetworks from './components/SocialNetworks'

@@ -1,4 +1,3 @@
-import './Blog.css'
 import getAllBlogsCards from '../../getAllBlogsCards'
 import { Link } from 'wouter'
 import { useEffect, useState } from 'react'

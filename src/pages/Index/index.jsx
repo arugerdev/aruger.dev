@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'wouter'
-import './IndexPage.css'
 
 export default function Index () {
   const [text, updateText] = useState('Web Developer')

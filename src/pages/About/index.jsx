@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { TimeLinePoints } from '../../components/TimeLinePoints'
-import './About.css'
 
 export default function About () {
   const [yearsOld, updateYearsOld] = useState(0)

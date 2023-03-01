@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import ProjectCard from '../../components/ProjectCard'
 import getAllProjects from '../../getAllProjects'
-import './Projects.css'
 
 export default function Projects () {
   const [projects] = useState(getAllProjects())
