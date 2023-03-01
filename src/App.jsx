@@ -11,7 +11,7 @@ import { useEffect } from 'react'
 import Blog from './pages/Blog'
 import Blogs from './components/Blogs'
 import getAllBlogsCards from './getAllBlogsCards'
-function App() {
+function App () {
   const [location] = useLocation()
   const blogId = parseInt((location.includes('/blog/') ? location.replace('/blog/', '') : '0'))
   const handleUpdateIcon = () => {

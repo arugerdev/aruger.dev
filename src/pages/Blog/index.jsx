@@ -25,7 +25,7 @@ export default function Blog () {
   return (
     <div className='blogPage'>
       <section className='headerBlog'>
-        <img title='This section is writted in Spanish!' className='spainIcon' src='https://images.emojiterra.com/twitter/v13.1/512px/1f1ea-1f1f8.png' alt='' width='24px' height='24px' />
+        <img loading='lazy' title='This section is writted in Spanish!' className='spainIcon' src='https://images.emojiterra.com/twitter/v13.1/512px/1f1ea-1f1f8.png' alt='' width='24px' height='24px' />
         <section className='filterForm'>
           <form action='#' onChange={handleChangeFilterName}>
             Search:
@@ -34,6 +34,8 @@ export default function Blog () {
               <option value='React'>React</option>
               <option value='JavaScript'>JavaScript</option>
               <option value='Css'>Css</option>
+              <option value='Unity'>Unity</option>
+              <option value='C#'>C#</option>
             </select>
             <input type='text' name='filterName' id='' />
           </form>
@@ -44,11 +46,11 @@ export default function Blog () {
           return (
             <Link to={`/blog/${blg.data.id}`} key={`blog_${blg.data.id}`}>
               <a className='blog'>
-                <img src={blg.data.image} alt='' />
+                <img loading='lazy' src={blg.data.image} alt='' />
                 <h2>{blg.data.title}</h2>
                 <p>{blg.data.description}</p>
                 <section>
-                  <img src={blg.data.linkImageCategory} alt='' />
+                  <img loading='lazy' src={blg.data.linkImageCategory} alt='' />
                   <small>{blg.data.category}</small>
                 </section>
               </a>

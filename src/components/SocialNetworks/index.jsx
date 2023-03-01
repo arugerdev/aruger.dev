@@ -25,7 +25,7 @@ export default function SocialNetworks () {
           return (
             <li key={i}>
               <a title={'Social network ' + i} target='_blank' href={sn.url} className='socialNetworkButton' rel='noreferrer'>
-                <img src={sn.icon} alt={'Social network ' + i} />
+                <img loading='lazy' src={sn.icon} alt={'Social network ' + i} />
               </a>
             </li>
           )
