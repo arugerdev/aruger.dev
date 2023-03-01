@@ -37,6 +37,12 @@ export default function getAllProjects () {
       ],
       Games: [
         {
+          name: 'Balling Aiming!',
+          id: 'balling-aiming',
+          pageLink: 'https://play.google.com/store/apps/details?id=com.Alvaroch.BallingAiming&hl=es',
+          imageURL: 'https://play-lh.googleusercontent.com/i_S_nYWrXR44PpcnOOcQci0T7ov78hevt7HHIck0C8F9Zey8scWs7hKSmz2hZkKPaQ=w240-h480-rw'
+        },
+        {
           name: 'IsoGolf!',
           id: 'iso-golf',
           pageLink: 'https://alvaroch.itch.io/iso-golf',
