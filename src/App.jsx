@@ -11,7 +11,7 @@ import Projects from './pages/Projects'
 import About from './pages/About'
 import DarkLogo from './assets/images/logo-dark.png'
 import LightLogo from './assets/images/logo-light.png'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Blog from './pages/Blog'
 import Blogs from './components/Blogs'
 import getAllBlogsCards from './getAllBlogsCards'
@@ -31,15 +31,24 @@ function App () {
 
   useEffect(() => handleUpdateIcon())
 
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setLoading(false)
+  }, [])
+
   return (
     <div className='App'>
       <Header />
       <div className='marginTop' />
-      <Route path='/' component={Index} />
-      <Route path='/projects' component={Projects} />
-      <Route path='/about' component={About} />
-      <Route path='/blog' component={Blog} />
-      <Route path='/blog/:id'> <Blogs id={blogId} data={getAllBlogsCards()[blogId].data} /></Route>
+      {(!loading) &&
+        <>
+          <Route path='/' component={Index} />
+          <Route path='/projects' component={Projects} />
+          <Route path='/about' component={About} />
+          <Route path='/blog' component={Blog} />
+          <Route path='/blog/:id'> <Blogs id={blogId} data={getAllBlogsCards()[blogId].data} /></Route>
+        </>}
       <SocialNetworks />
     </div>
   )
