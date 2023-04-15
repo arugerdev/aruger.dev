@@ -107,6 +107,8 @@
   gap: 8px;
   color: gray;
   font-weight: 800;
+  background: rgba(83, 155, 245, 80);
+  border-radius: 8px ;
 }
 
 .blog>img {
