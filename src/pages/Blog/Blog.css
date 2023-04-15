@@ -102,10 +102,10 @@
   display: flex;
   width: auto;
   flex-direction: row;
-  place-items: center;
+  place-items: start;
   justify-content: start;
   gap: 8px;
-  color: gray;
+  color: #eee;
   font-weight: 800;
   background: rgba(144, 200, 255, 50);
   border-radius: 4px;
