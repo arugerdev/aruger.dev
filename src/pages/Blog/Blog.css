@@ -88,6 +88,7 @@
 }
 
 .blog>h2 {
+  text-align: start;
   color: var(--text);
   padding: 0;
   margin: 0;
@@ -95,6 +96,7 @@
 }
 
 .blog>p {
+  text-align: start;
   color: gray;
 }
 
@@ -102,14 +104,15 @@
   display: flex;
   width: auto;
   flex-direction: row;
-  place-items: start;
-  justify-content: start;
-  gap: 8px;
+  place-items: center;
+  justify-content: center;
+  gap: 4px;
   color: #000;
-  font-weight: 800;
-  background: rgba(144, 200, 255, 50);
-  border-radius: 4px;
-  padding: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  background: #4ad5ff9f;
+  border-radius: 8px;
+  padding: 2px 6px;
 }
 
 .blog>img {
@@ -119,9 +122,9 @@
 }
 
 .blog>section>img {
-  width: 20px;
-  height: 20px;
-  border-radius: 5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 400px) {

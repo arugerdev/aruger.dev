@@ -44,11 +44,11 @@ export default function Blog () {
         {filteredData.map((blg) => {
           return (
             <Link to={`/blog/${blg.data.id}`} key={`blog_${blg.data.id}`}>
-              <a className='blog'>
+              <a className='blog' title={blg.data.name}>
                 <img loading='lazy' src={blg.data.image} alt='' />
                 <h2>{blg.data.title}</h2>
                 <p>{blg.data.description}</p>
-                <section>
+                <section title={blg.data.category}>
                   <img loading='lazy' src={blg.data.linkImageCategory} alt='' />
                   <small>{blg.data.category}</small>
                 </section>
