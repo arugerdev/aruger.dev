@@ -78,8 +78,8 @@
 .blog {
   display: flex;
   background: var(--background);
-  place-items: center;
-  justify-content: center;
+  place-items: start;
+  justify-content: start;
   flex-direction: column;
   border: 1px solid black;
   box-shadow: 0px 0px 10px black;
@@ -105,7 +105,7 @@
   place-items: start;
   justify-content: start;
   gap: 8px;
-  color: #eee;
+  color: #000;
   font-weight: 800;
   background: rgba(144, 200, 255, 50);
   border-radius: 4px;
