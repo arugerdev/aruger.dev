@@ -100,15 +100,16 @@
 
 .blog>section {
   display: flex;
-  width: 100%;
+  width: auto;
   flex-direction: row;
   place-items: center;
   justify-content: start;
   gap: 8px;
   color: gray;
   font-weight: 800;
-  background: rgba(83, 155, 245, 80);
-  border-radius: 8px ;
+  background: rgba(144, 200, 255, 50);
+  border-radius: 4px;
+  padding: 4px;
 }
 
 .blog>img {
