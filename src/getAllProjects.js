@@ -6,13 +6,18 @@ export default function getAllProjects () {
 
     {
       Web: [
-
         {
           name: 'Aruger.dev',
           id: 'aruger.dev',
           pageLink: '/',
           githubLink: 'https://github.com/AlvaroRuCh/aruger.dev',
           imageURL: Logo
+        }, {
+          name: 'Babi Website',
+          id: 'pillz4babi-website',
+          pageLink: 'https://babi.vercel.app/',
+          githubLink: null,
+          imageURL: 'https://yt3.googleusercontent.com/EPKRgZK4rnCDuQ08--fXtPhugnrUPDi5j28exBL5pqJQ_hnAoLrXjexRbjig76ggzHVD7ALnbA=s176-c-k-c0x00ffffff-no-rj'
         }, {
           name: 'What To Do',
           id: 'WhatToDo-React-App',
