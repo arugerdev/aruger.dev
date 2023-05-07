@@ -108,7 +108,7 @@ export default function About () {
       <span className='normal text'>
         My name is
       </span>
-      <span className='bold colored text'>Álvaro Rüger </span>
+      <span className='bold colored text'> Álvaro Rüger </span>
       <span className='normal text'>, I'm </span>
       <span className='bold text'>
         {yearsOld}
